@@ -1,0 +1,74 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ecollect>
+            <country>mlu</country>
+            <title>General configuration</title>
+            <order_status_approved>processing</order_status_approved>
+            <order_status_refunded>pending</order_status_refunded>
+            <order_status_in_process>pending</order_status_in_process>
+            <order_status_in_mediation>pending</order_status_in_mediation>
+            <order_status_rejected>pending</order_status_rejected>
+            <order_status_cancelled>cancelled</order_status_cancelled>
+            <order_status_chargeback>pending</order_status_chargeback>
+            <logs>0</logs>
+            <debug_mode>0</debug_mode>
+            <use_successpage_mp>1</use_successpage_mp>
+            <calculalator_available>0</calculalator_available>
+            <time_between_verifications>*/5 * * * *</time_between_verifications>
+        </ecollect>
+        <payment>
+             <ecollect_custom>
+                <active>0</active>
+                <useccv>1</useccv>
+                <cctypes>AE,VI,MC,DI,JCB</cctypes>
+                <ccfields>csc,expdate,acct</ccfields>
+                <model>ecollect\Core\Model\Custom\Payment</model>
+                <title translate="label">Credit Card - e-Collect</title>
+                <allowspecific>0</allowspecific>
+                <!--banner_checkout>http://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_468X60.jpg</banner_checkout-->
+                <sort_order>-2</sort_order>
+                <payment_action>true</payment_action>
+                <coupon_ecollect>0</coupon_ecollect>
+            </ecollect_custom>
+
+            <ecollect_standard>
+                <active>1</active>
+                <model>ecollect\Core\Model\Standard\Payment</model>
+                <payment_action>true</payment_action>
+                <order_status>processing</order_status>
+                <title>e-Collect</title>
+                <entityCode>50025</entityCode>
+                <apiKey>456A327663334F356555486C70377135433731672F664A597A4F32504A576A79</apiKey>
+                <srvCode>1</srvCode>
+                <srvCurrency>COP</srvCurrency>
+                <wdslProduction>https://gateway1.ecollect.co/app_express/</wdslProduction>
+                <wdslTest>https://test1.e-collect.com/app_express/api/</wdslTest>
+                <testmode>1</testmode>
+                <debug>1</debug>
+                <allowspecific>0</allowspecific>
+                <sort_order>1</sort_order>
+                <installments>24</installments>
+                <type_checkout>redirect</type_checkout>
+                <auto_return>1</auto_return>
+                <iframe_width>900</iframe_width>
+                <iframe_height>700</iframe_height>
+                <sandbox_mode>0</sandbox_mode>
+				<group>ecollect_standard</group>
+            </ecollect_standard>
+
+            <ecollect_customticket>
+                <active>0</active>
+                <model>ecollect\Core\Model\CustomTicket\Payment</model>
+                <title translate="label">Ticket - e-Collect</title>
+                <allowspecific>0</allowspecific>
+                <binary_mode>0</binary_mode>
+                <!--banner_checkout>http://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/2014/230x60.png</banner_checkout-->
+                <sort_order>-1</sort_order>
+                <payment_action>true</payment_action>
+                <coupon_ecollect>0</coupon_ecollect>
+                <cctypes>AE,VI,MC,DI,JCB</cctypes>
+            </ecollect_customticket>
+
+        </payment>
+    </default>
+</config>

@@ -1,0 +1,46 @@
+#meli-logo {
+    padding-left: 85px;
+    background: url(images/logo.png) no-repeat 0 0px;
+    height: 85px;
+}
+
+#meen-logo {
+    padding-left: 85px;
+    height: 47px;
+}
+
+.meli:before {
+    float: right;
+}
+
+.meli-legend {
+    margin-top: 8px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.meli-btn {
+    margin-top: 17%;
+}
+
+.meli-payment-btn {
+    /*margin-top: 4%;*/
+}
+
+.config-heading.meli .heading {
+    margin-top: 18px;
+}
+
+.disabled-legend {
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+fieldset[id^="payment_ecollect"] table {
+    width: 100% !important;
+}
+
+fieldset[id^="carriers_mercadoenvios"] table {
+    width: 100% !important;
+}

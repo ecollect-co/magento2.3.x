@@ -1,0 +1,60 @@
+<?php
+/**
+ * @var ecollect\Core\Block\Standard\Success $block
+ */
+/*
+$order = $this->getOrder();
+$total = $this->getTotal();
+$payment = $this->getPayment();
+
+$linkToOrder = __(
+    'Your order %1 has been successfully generated.',
+    '<a href="' . $block->escapeUrl($this->getOrderUrl()) . '">' . $block->escapeHtml($order->getIncrementId()) . '</a>'
+);
+
+$paymenMethod = $this->getPaymentMethod();
+$infoPayment = $this->getInfoPayment();
+*/
+
+
+//file_put_contents("log.html","<br>success.phtml<br> Buscando data ",FILE_APPEND);
+$data = json_decode($block->getKey());
+//file_put_contents("log.html","<br>success.phtml<br>data ".json_encode($data),FILE_APPEND);
+
+$ecollectTitle = $data->ecollectTitle;
+//file_put_contents("log.html","<br>ecollectTitle $ecollectTitle",FILE_APPEND);
+$ecollectTicket = $data->ecollectTicket;
+$ecollectTrazabilityCode = $data->ecollectTrazabilityCode;
+$ecollectTransactionState = $data->ecollectTransactionState;
+$ecollectBankProcessDate = $data->ecollectBankProcessDate;
+$ecollectBankName = $data->ecollectBankName;
+
+?>
+
+<div id="box-ecollect">
+
+
+        <h2 class="ecollect-title">
+            <?php /* @escapeNotVerified */ echo __('Gracias por tu compra!'); ?>
+        </h2>
+
+        <h2 class="ecollect-title"><?php echo __($ecollectTitle); ?></h2>
+
+        <h3 class="ecollect-title-info-payment"><?php /* @escapeNotVerified */ echo __('Datos de pago'); ?></h3>
+
+        <p>Ticket <?php /* @escapeNotVerified */ echo __($ecollectTicket); ?></p>
+        <p>Número de autorización <?php /* @escapeNotVerified */ echo __($ecollectTrazabilityCode); ?></p>
+        <p>Estado de la transacción <?php /* @escapeNotVerified */ echo __($ecollectTransactionState); ?></p>
+        <p>Fecha de procesamiento <?php /* @escapeNotVerified */ echo __($ecollectBankProcessDate); ?></p>
+        <p>Banco autorizador <?php /* @escapeNotVerified */ echo __($ecollectBankName); ?></p>
+
+
+
+</div>
+
+
+
+    <div class="primary button-success">
+        <a class="action primary continue" href="<?php /* @escapeNotVerified */ echo $block->getUrl() ?>"><span><?php /* @escapeNotVerified */ echo __('Continue Shopping') ?></span></a>
+    </div>
+

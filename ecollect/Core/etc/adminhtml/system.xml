@@ -1,0 +1,79 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/module-config/etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="ecollect" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>e-Collect - Global Configuration</label>
+            </group>
+            <group id="ecollect_standard" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>e-Collect</label>
+                <group id="checkout" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Classic Checkout</label>
+                    <frontend_model>ecollect\Core\Block\Adminhtml\System\Config\Fieldset\Payment</frontend_model>
+                    <field id="active" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Enabled</label>
+                        <comment>For the operation of the e-Collect is necessary to configure 'Entity code', 'Srv code', 'WDSL production URL' and 'WDSL test URL' below</comment>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        <config_path>payment/ecollect_standard/active</config_path>
+                    </field>
+                    <field id="title" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Payment Title</label>
+                        <config_path>payment/ecollect_standard/title</config_path>
+                    </field>
+                    <!--field id="banner_checkout" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Banner Checkout</label>
+                        <config_path>payment/ecollect_standard/banner_checkout</config_path>
+                    </field-->
+                    <field id="sort_order" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Checkout Position</label>
+                        <!--frontend_class>validate-number</frontend_class-->
+                        <config_path>payment/ecollect_standard/sort_order</config_path>
+                    </field>
+                    <field id="entityCode" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Entity code</label>
+                        <config_path>payment/ecollect_standard/entityCode</config_path>
+                    </field>
+                    <field id="apiKey" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>API KEY</label>
+                        <config_path>payment/ecollect_standard/apiKey</config_path>
+                    </field>
+                    <field id="srvCode" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Srv code</label>
+                        <config_path>payment/ecollect_standard/srvCode</config_path>
+                    </field>
+                    <field id="srvCurrency" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Srv currency</label>
+                        <source_model>ecollect\Core\Model\System\Config\Source\ecollectCurrency</source_model>
+                        <config_path>payment/ecollect_standard/srvCurrency</config_path>
+                    </field>
+                    <field id="wdslProduction" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>WDSL production URL</label>
+                        <config_path>payment/ecollect_standard/wdslProduction</config_path>
+                    </field>
+                    <field id="wdslTest" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>WDSL test URL</label>
+                        <config_path>payment/ecollect_standard/wdslTest</config_path>
+                    </field>
+                    <field id="testmode" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Test mode</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                        <config_path>payment/ecollect_standard/testmode</config_path>
+                    </field>
+                    <field id="allowspecific" translate="label" type="allowspecific" sortOrder="170" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Payment from Applicable Countries</label>
+                        <source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+                        <config_path>payment/ecollect_standard/allowspecific</config_path>
+                    </field>
+                    <field id="specificcountry" translate="label" type="multiselect" sortOrder="180" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Payment from Specific Countries</label>
+                        <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                        <config_path>payment/ecollect_standard/specificcountry</config_path>
+                    </field>
+                    <!--field id="order_status" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>New Order Status</label>
+                        <source_model>Magento\Sales\Model\Config\Source\Order\Status\Processing</source_model>
+                    </field-->
+                </group>
+            </group>
+        </section>
+    </system>
+</config>
