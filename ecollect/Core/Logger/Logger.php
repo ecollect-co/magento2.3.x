@@ -1,7 +1,7 @@
 <?php
 namespace ecollect\Core\Logger;
 /**
- * MercadoPago custom logger allows name changing to differentiate log call origin
+ * custom logger allows name changing to differentiate log call origin
  * Class Logger
  *
  * @package ecollect\Core\Logger
