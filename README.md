@@ -1,26 +1,25 @@
-# Plug-in ecollect API Gateway para Magento 2 (2.2, 2.3, 2.4)
+# Plugin ecollect API Gateway para Magento 2 (2.2-2.4)
 
-Este plug-in permite integrar la plataforma ecollect como opción de pago en ecommerce Magento 2 mediante REST API
+Este plugin permite integrar la plataforma ecollect como opción de pago en ecommerce Magento 2 mediante REST API
 
 ### Prerrequisitos
 
 Necesita tener instalado Magento 2 con todas sus dependencias y tener los datos de integración a ecollect.
 
+### Instalación del plugin
 
-### Instalación del plug-in
+1- Copiar el plugin en el servidor de Magento 2
 
-1- Copiar el Plug-in en el servidor de Magento 2
+Primera opción: Descargue le Plug-in y descomprima en la carpeta /app/code/ de su instalación de Magento 2 
 
-Opción a) Clonar el repositorio en su máquina. Requiere instalación de 
+Segunda opción: Clonar el repositorio en su máquina. Requiere instalación de Git (https://git-scm.com/download)
 ```
 git clone https://github.com/ecollect-co/magento2.3.x
 ```
 
-Opción b) Descargue le Plug-in y descomprima en la carpeta /app/code/ de su instalación de Magento 2 
-
-2- Ingresar a la carpeta creada y copiar el contenido en su instalacion en magento en la ruta ruta/de/su/instalacion/app/code/
+2- Ingresar a la carpeta creada y copiar el contenido en su instalacion en Magento 2 a partir de la ruta /app/code/
 ```
-cd magento2
+cd magento2.3.x
 cp . -R /path Magento/app/code/
 ```
 3- Dirigirse a la ruta de instalación de Magento 2 y ejecutar el siguiente comando
@@ -57,8 +56,7 @@ php bin/magento cache:flush
 
 ## Configuración de la tienda
 
-Siga los pasos del capítulo 4.Configuración indicados en el siguiente manual:
-
+Siga los pasos del capítulo "4. Configuración" indicado en el siguiente manual:
 ```
 https://github.com/ecollect-co/magento2.3.x/blob/main/Manual/Manual%20de%20instalaci%C3%B3n%20ecollect%20-%20Magento2.pdf
 ```
