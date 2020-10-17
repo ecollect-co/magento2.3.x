@@ -3,7 +3,7 @@ namespace ecollect\Core\Logger\Handler;
 
 use Monolog\Logger;
 /**
- * MercadoPago logger handler
+ * ecollect logger handler
  */
 class System
     extends \Magento\Framework\Logger\Handler\Base

@@ -5,7 +5,7 @@ namespace ecollect\Core\Controller\Api;
 /**
  * Class Coupon
  *
- * @package Mercadopago\Core\Controller\Notifications
+ * @package ecollect\Core\Controller\Notifications
  */
 class Subtotals
     extends \Magento\Framework\App\Action\Action

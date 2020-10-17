@@ -162,13 +162,11 @@
 "e-Collect: Invalid client id or client secret","e-Collect: Invalid client id or client secret"
 "e-Collect - Custom Checkout: Invalid access token","e-Collect - Custom Checkout: Invalid access token"
 "(estimated date %1)","(estimated date %1)"
-"MercadoEnvios is not enabled in the country where e-Collect is configured", "MercadoEnvios is not enabled in the country where e-Collect is configured"
 "Discount e-Collect","Discount e-Collect"
 
 "Is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
                                          During the sandbox mode tests, you can operate over HTTP,
                                          but for homologation you'll need to acquire the certificate in case you don't have it.
-                                         <a href="https://www.ecollect.com.ar/developers/solutions/payments/custom-checkout/appliance-requirements/" target="_blank">Learn More</a>",
                                          "It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
                                                                                   During the sandbox mode tests, you can operate over HTTP,
                                                                                   but for homologation you'll need to acquire the certificate in case you don't have it.

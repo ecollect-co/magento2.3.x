@@ -3,7 +3,7 @@
 namespace ecollect\Core\Model;
 
 /**
- * Core Model of MP plugin, used by all payment methods
+ * Core Model of ecollect plugin, used by all payment methods
  *
  * Class Core
  *
@@ -254,11 +254,11 @@ class Core
             ["field" => "expiration_date", "title" => "Expiration Date: %1"],
             ["field" => "installments", "title" => "Installments: %1"],
             ["field" => "statement_descriptor", "title" => "Statement Descriptor: %1"],
-            ["field" => "payment_id", "title" => "Payment id (e-Collect): %1"],
+            ["field" => "payment_id", "title" => "Payment id (ecollect): %1"],
             ["field" => "status", "title" => "Payment Status: %1"],
             ["field" => "status_detail", "title" => "Payment Detail: %1"],
             ["field" => "activation_uri", "title" => "Generate Ticket"],
-            ["field" => "payment_id_detail", "title" => "e-Collect Payment Id: %1"],
+            ["field" => "payment_id_detail", "title" => "ecollect Payment Id: %1"],
             ["field" => "id", "title" => "Collection Id: %1"],
         ];
 

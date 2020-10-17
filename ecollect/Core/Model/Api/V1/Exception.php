@@ -2,7 +2,7 @@
 
 namespace ecollect\Core\Model\Api\V1;
 /**
- *  Exception which thrown by MercadoPago API in case of processable error codes from api v1
+ *  Exception which thrown by ecollect API in case of processable error codes from api v1
  *
  * Class Exception
  *

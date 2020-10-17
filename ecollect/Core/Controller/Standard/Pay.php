@@ -5,7 +5,7 @@ namespace ecollect\Core\Controller\Standard;
 /**
  * Class Pay action controller to pay order with MP
  *
- * @package Mercadopago\Core\Controller\Standard
+ * @package ecollect\Core\Controller\Standard
  */
 class Pay
     extends \Magento\Framework\App\Action\Action

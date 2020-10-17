@@ -81,7 +81,7 @@ class RefundObserverBeforeSave
         }
 
         if ($order->getExternalRequest()) {
-            return; // si la peticion de crear un credit memo viene de mercado pago, no hace falta mandar el request nuevamente
+            return; 
         }
 
         $orderStatus = $order->getData('status');

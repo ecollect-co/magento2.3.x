@@ -1,8 +1,7 @@
 <?php
 namespace ecollect\Core\Lib;
 /**
- * MercadoPago Integration Library
- * Access MercadoPago for payments integration
+ * ecollect Integration Library
  *
  * @author hcasatti
  *

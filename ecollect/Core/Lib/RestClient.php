@@ -1,7 +1,7 @@
 <?php
 namespace ecollect\Core\Lib;
 /**
- * MercadoPago cURL RestClient
+ * ecollect cURL RestClient
  */
 
 
@@ -28,7 +28,7 @@ class RestClient {
 
         $connect = curl_init(self::API_BASE_URL . $uri);
 
-        curl_setopt($connect, CURLOPT_USERAGENT, "MercadoPago Magento-1.9.x-transparent Cart v1.0.2");
+        curl_setopt($connect, CURLOPT_USERAGENT, "Magento-1.9.x-transparent Cart v1.0.2");
         curl_setopt($connect, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($connect, CURLOPT_CUSTOMREQUEST, $method);
         curl_setopt($connect, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);

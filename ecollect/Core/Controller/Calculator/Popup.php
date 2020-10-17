@@ -5,7 +5,7 @@ namespace ecollect\Core\Controller\Calculator;
 /**
  * Class Index action controller to calculator popUp
  *
- * @package Mercadopago\Core\Controller\Calculator
+ * @package ecollect\Core\Controller\Calculator
  */
 class Popup
     extends \Magento\Framework\App\Action\Action

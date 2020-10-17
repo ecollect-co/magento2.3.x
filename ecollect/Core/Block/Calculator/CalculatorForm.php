@@ -32,7 +32,7 @@ class CalculatorForm
     }
 
     /**
-     * Return the PublicKey from MercadoPago checkout custom configuration
+     * Return the PublicKey from ecollect checkout custom configuration
      *
      * @return mixed
      */

@@ -16,7 +16,7 @@ $link_to_calculator = $this->getUrlCalculatorPayment();
                 <?php /* @escapeNotVerified */ echo __('Calculate your payments ')?>
             </a>
             <p><?php /* @escapeNotVerified */ echo __('with ')?></p>
-            <img id="meli-logo" src="<?php echo $block->escapeUrl($this->getUrlLogo()) ?>" alt="MercadoPago"/>
+            <img id="meli-logo" src="<?php echo $block->escapeUrl($this->getUrlLogo()) ?>" alt="ecollect"/>
         </div>
         <?php
         $this->getChildBlock("ecollect.calculator.form")->setAmount($currentAmount);

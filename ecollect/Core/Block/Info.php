@@ -39,11 +39,11 @@ class Info extends \Magento\Payment\Block\Info
             ["field" => "expiration_date", "title" => "Expiration Date"],
             ["field" => "installments", "title" => "Installments"],
             ["field" => "statement_descriptor", "title" => "Statement Descriptor"],
-            ["field" => "payment_id", "title" => "Payment id (MercadoPago)"],
+            ["field" => "payment_id", "title" => "Payment id (ecollect)"],
             ["field" => "status", "title" => "Payment Status"],
             ["field" => "status_detail", "title" => "Payment Detail"],
             ["field" => "activation_uri", "title" => "Generate Ticket"],
-            ["field" => "payment_id_detail", "title" => "e-Collect Payment Id"],
+            ["field" => "payment_id_detail", "title" => "ecollect Payment Id"],
         ];
 
         foreach ($fields as $field) {

@@ -36,7 +36,7 @@
                 <model>ecollect\Core\Model\Standard\Payment</model>
                 <payment_action>true</payment_action>
                 <order_status>processing</order_status>
-                <title>e-Collect</title>
+                <title>ecollect</title>
                 <entityCode>50025</entityCode>
                 <apiKey>456A327663334F356555486C70377135433731672F664A597A4F32504A576A79</apiKey>
                 <srvCode>1</srvCode>
@@ -59,7 +59,7 @@
             <ecollect_customticket>
                 <active>0</active>
                 <model>ecollect\Core\Model\CustomTicket\Payment</model>
-                <title translate="label">Ticket - e-Collect</title>
+                <title translate="label">Ticket - ecollect</title>
                 <allowspecific>0</allowspecific>
                 <binary_mode>0</binary_mode>
                 <!--banner_checkout>http://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/2014/230x60.png</banner_checkout-->
