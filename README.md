@@ -57,4 +57,4 @@ php bin/magento cache:flush
 ## Configuración de la tienda
 
 Siga los pasos del capítulo "4. Configuración" indicado en el siguiente manual:
-https://github.com/ecollect-co/magento2.3.x/blob/main/Manual/Manual-instalaci%C3%B3n-ecollect-Magento2.pdf
+https://github.com/ecollect-co/magento2.3.x/blob/main/Manual/Manual-instalacion-ecollect-Magento2.pdf
