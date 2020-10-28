@@ -26,6 +26,12 @@ cp . -R /path Magento/app/code/
 ```
 php bin/magento module:enable ecollect_Core
 ```
+```
+Cambiar permisos de todas las carpetas: 
+find ./ -type d -exec chmod 755 {} \;
+Cambiar permisos de todos los archivos: 
+find ./ -type f -print0 | xargs -0 chmod 0644
+```
 
 4- El siguiente comando ejecuta las tareas programadas agendadas, entre esas tareas está la que busca nuevas transacciones en ecollect y actualiza las órdenes de la tienda
 
@@ -51,7 +57,10 @@ rm -rf page_cache
 rm -rf view_preprocessed 
 cd .. 
 
+rm -rf var/cache/* pub/static/* generated/*
 php bin/magento cache:flush
+php -dmemory_limit=5G  bin/magento setup:static-content:deploy -f
+
 ```
 
 ## Configuración de la tienda
