@@ -2,7 +2,7 @@
 namespace ecollect\Core\Block\Calculator;
 
 class CalculatorForm
-    extends \Magento\Framework\View\Element\Template
+    extends Magento\Framework\View\Element\Template
 {
 
     const CALCULATOR_JS = 'ecollect/ecollect_calculator.js';
@@ -18,12 +18,12 @@ class CalculatorForm
     /**
      * CalculatorForm constructor.
      *
-     * @param \Magento\Framework\View\Element\Template\Context $context
+     * @param Magento\Framework\View\Element\Template\Context $context
      * @param \ecollect\Core\Helper\Data                    $helper
      * @param array                                            $data
      */
     public function __construct(
-        \Magento\Framework\View\Element\Template\Context    $context,
+        Magento\Framework\View\Element\Template\Context    $context,
         \ecollect\Core\Helper\Data                       $helper,
         array $data = []
     ) {
@@ -32,7 +32,7 @@ class CalculatorForm
     }
 
     /**
-     * Return the PublicKey from ecollect checkout custom configuration
+     * Return the PublicKey from MercadoPago checkout custom configuration
      *
      * @return mixed
      */
@@ -49,7 +49,7 @@ class CalculatorForm
      */
     public function getPaymentMethods()
     {
-        $accessToken = $this->_scopeConfig->getValue(\ecollect\Core\Helper\Data::XML_PATH_ACCESS_TOKEN, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+        $accessToken = $this->_scopeConfig->getValue(\ecollect\Core\Helper\Data::XML_PATH_ACCESS_TOKEN, Magento\Store\Model\ScopeInterface::SCOPE_STORE);
         return $this->_helperData->getMercadoPagoPaymentMethods($accessToken);
     }
 
