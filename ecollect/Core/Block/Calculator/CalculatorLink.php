@@ -4,7 +4,7 @@ namespace ecollect\Core\Block\Calculator;
 
 
 class CalculatorLink
-    extends Magento\Framework\View\Element\Template
+    extends \Magento\Framework\View\Element\Template
 {
 
     const PAGE_PDP = 'product.info.calculator';
@@ -16,28 +16,28 @@ class CalculatorLink
     protected $_helperData;
 
     /**
-     * @var Magento\Framework\Registry
+     * @var \Magento\Framework\Registry
      */
     protected $_registry;
 
     /**
-     * @var Magento\Checkout\Model\Session
+     * @var \Magento\Checkout\Model\Session
      */
     protected $_mysession;
 
     /**
      * CalculatorLink constructor.
      *
-     * @param Magento\Framework\View\Element\Template\Context   $context
+     * @param \Magento\Framework\View\Element\Template\Context   $context
      * @param \ecollect\Core\Helper\Data                      $helper
-     * @param  Magento\Framework\Registry                       $registry
+     * @param  \Magento\Framework\Registry                       $registry
      * @param array                                              $data
      */
     public function __construct(
-        Magento\Framework\View\Element\Template\Context    $context,
+        \Magento\Framework\View\Element\Template\Context    $context,
         \ecollect\Core\Helper\Data                       $helper,
-        Magento\Framework\Registry                         $registry,
-        Magento\Checkout\Model\Session                     $session,
+        \Magento\Framework\Registry                         $registry,
+        \Magento\Checkout\Model\Session                     $session,
 
 
         array $data = []
@@ -56,7 +56,7 @@ class CalculatorLink
      */
     public function isAvailableCalculator(){
 
-        $accessToken = $this->_scopeConfig->getValue(\ecollect\Core\Helper\Data::XML_PATH_ACCESS_TOKEN, Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+        $accessToken = $this->_scopeConfig->getValue(\ecollect\Core\Helper\Data::XML_PATH_ACCESS_TOKEN, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
         $isValidAccessToken = $this->_helperData->isValidAccessToken($accessToken);
         return  ($isValidAccessToken & !empty($this->_helperData->getPublicKey()) & $this->_helperData->isAvailableCalculator());
     }
