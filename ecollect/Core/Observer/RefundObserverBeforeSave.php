@@ -81,7 +81,7 @@ class RefundObserverBeforeSave
         }
 
         if ($order->getExternalRequest()) {
-            return; 
+            return; // si la peticion de crear un credit memo viene de ecollect pago, no hace falta mandar el request nuevamente
         }
 
         $orderStatus = $order->getData('status');

@@ -112,7 +112,7 @@ class ConfigObserver
     }
 
     /**
-     * Updates configuration values based every time configuration section is saved
+     * Updates configuration values based every time ecollect configuration section is saved
      *
      * @param \Magento\Framework\Event\Observer $observer
      *
@@ -390,6 +390,9 @@ class ConfigObserver
         $customTicket = $this->_scopeConfig->getValue('payment/ecollect_customticket/active',
             \Magento\Store\Model\ScopeInterface::SCOPE_WEBSITE,
             $this->_scopeCode);
+        $mercadoEnvios = $this->_scopeConfig->getValue('carriers/mercadoenvios/active',
+            \Magento\Store\Model\ScopeInterface::SCOPE_WEBSITE,
+            $this->_scopeCode);
         $twoCards = $this->_scopeConfig->getValue('payment/ecollect_custom/allow_2_cards',
             \Magento\Store\Model\ScopeInterface::SCOPE_WEBSITE,
             $this->_scopeCode);
@@ -404,6 +407,7 @@ class ConfigObserver
         $request['data']['checkout_basic'] = $standard == 1 ? 'true' : 'false';
         $request['data']['checkout_custom_credit_card'] = $custom == 1 ? 'true' : 'false';
         $request['data']['checkout_custom_ticket'] = $customTicket == 1 ? 'true' : 'false';
+        $request['data']['mercado_envios'] = $mercadoEnvios == 1 ? 'true' : 'false';
         $request['data']['two_cards'] = $twoCards == 1 ? 'true' : 'false';
         $request['data']['checkout_custom_credit_card_coupon'] = $customCoupon == 1 ? 'true' : 'false';
         $request['data']['checkout_custom_ticket_coupon'] = $customTicketCoupon == 1 ? 'true' : 'false';

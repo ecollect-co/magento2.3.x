@@ -1,7 +1,7 @@
 <?php
 namespace ecollect\Core\Logger;
 /**
- * custom logger allows name changing to differentiate log call origin
+ * ecollect custom logger allows name changing to differentiate log call origin
  * Class Logger
  *
  * @package ecollect\Core\Logger

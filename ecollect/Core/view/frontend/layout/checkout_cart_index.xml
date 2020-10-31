@@ -48,12 +48,10 @@
             <block class="ecollect\Core\Block\Calculator\CalculatorLink"
                    name="checkout.cart.calculator"
                    template="ecollect_Core::calculator/calculatorLink.phtml"
-                   after="checkout.cart.methods.onepage.bottom">
-                    <block class="ecollect\Core\Block\Calculator\CalculatorForm"
-                           name="ecollect.calculator.form"
-                           template="ecollect_Core::calculator/calculatorForm.phtml" />
-            </block>
+                   after="checkout.cart.methods.onepage.bottom"/>
+            <block class="ecollect\Core\Block\Calculator\CalculatorForm"
+                   name="ecollect.calculator.form"
+                   template="ecollect_Core::calculator/calculatorForm.phtml" />            
         </referenceContainer>
-
     </body>
 </page>

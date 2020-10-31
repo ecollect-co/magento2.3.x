@@ -8,15 +8,13 @@
 
     <body>
         <referenceContainer name="product.info.extrahint">
-            <block class="ecollect\Core\Block\Calculator\CalculatorLink"
+            <!--block class="ecollect\Core\Block\Calculator\CalculatorLink"
                    name="product.info.calculator"
                    template="ecollect_Core::calculator/calculatorLink.phtml"
-                   before="product.info.social">
-                <block class="ecollect\Core\Block\Calculator\CalculatorForm"
-                       name="ecollect.calculator.form"
-                       template="ecollect_Core::calculator/calculatorForm.phtml" />
-            </block>
+                   before="product.info.social"/-->
+            <!--block class="ecollect\Core\Block\Calculator\CalculatorForm"
+                   name="ecollect.calculator.form"
+                   template="ecollect_Core::calculator/calculatorForm.phtml" /-->            
         </referenceContainer>
     </body>
-
 </page>

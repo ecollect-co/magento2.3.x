@@ -1,4 +1,4 @@
-﻿"//XXXXXXX  XXXXXXX","//XXXXXXX  XXXXXXX"
+﻿"//XXXXXXX MercadoPago XXXXXXX","//XXXXXXX MercadoPago XXXXXXX"
 
 
 "e-Collect - Global Configuration","e-Collect - Configuración Global"
@@ -24,6 +24,22 @@
 "e-Collect - Custom Checkout","e-Collect - Checkout personalizado"
 "Public Key","Clave pública"
 "Access Token","Token de acceso"
+"<span>Click to get your Access Token for: </span>
+<a href="https://www.ecollect.com/mla/account/credentials" target="_blank">Argentina</a>
+<a href="https://www.ecollect.com/mlb/account/credentials" target="_blank">Brazil</a><br>
+<a href="https://www.ecollect.com/mco/account/credentials" target="_blank">Colombia</a>
+<a href="https://www.ecollect.com/mlm/account/credentials" target="_blank">Mexico</a>
+<a href="https://www.ecollect.com/mlv/account/credentials" target="_blank">Venezuela</a>
+<a href="https://www.ecollect.com/mlc/account/credentials" target="_blank">Chile</a>
+<a href="https://www.ecollect.com/mpe/account/credentials" target="_blank">Peru</a>","
+<span>Haga clic para obtener su token de acceso para: </span>
+<a href="https://www.ecollect.com/mla/account/credentials" target="_blank">Argentina</a>
+<a href="https://www.ecollect.com/mlb/account/credentials" target="_blank">Brazil</a><br>
+<a href="https://www.ecollect.com/mco/account/credentials" target="_blank">Colombia</a>
+<a href="https://www.ecollect.com/mlm/account/credentials" target="_blank">Mexico</a>
+<a href="https://www.ecollect.com/mlv/account/credentials" target="_blank">Venezuela</a>
+<a href="https://www.ecollect.com/mlc/account/credentials" target="_blank">Chile</a>
+<a href="https://www.ecollect.com/mpe/account/credentials" target="_blank">Peru</a>"
 
 
 "Checkout Custom - Credit Card","Tarjeta de crédito - Checkout personalizado"
@@ -269,9 +285,9 @@ Es un requisito que usted cuente con un certificado SSL, y que el formulario de 
 "(estimated date %1)","(fecha estimada %1)"
 
 "Cannot repeat Magento Product size attributes","No puede repetir los atributos de tamaño de producto de magento"
-"Cannot repeat Product size attributes","No puede repetir los atributos de tamaño de producto"
+"Cannot repeat Envios Product size attributes","No puede repetir los atributos de tamaño de producto de Envios"
 "Checkout Classic Method must be enabled","El método de pago Checkout Classic debe estar habilitado"
-"Is not enabled in the country where e-Collect is configured", "no está disponible en el país configurado para e-Collect"
+"Envios is not enabled in the country where e-Collect is configured", "Envios no está disponible en el país configurado para e-Collect"
 "Discount e-Collect","Descuento de e-Collect"
 "It is a requirement that you have a SSL certificate, and the payment form to be provided under an HTTPS page.
                                         During the sandbox mode tests, you can operate over HTTP,
@@ -336,7 +352,7 @@ Es un requisito que usted cuente con un certificado SSL, y que el formulario de 
 "Interest-free", "Sin Interés"
 "Pay", "Pagas"
 "Banck", "Banco"
-"Pay with ecollect","Pagar con ecollect"
+"Pay with ecollect","Pagar con e-Collect"
 "Payment cards", "Tarjeta de crédito"
 
 "Credit Card - e-Collect ", "Tarjeta de Credito - e-Collect "

@@ -2,6 +2,7 @@
 namespace ecollect\Core\Lib;
 /**
  * ecollect Integration Library
+ * Access ecollect for payments integration
  *
  * @author hcasatti
  *

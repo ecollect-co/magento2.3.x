@@ -5,7 +5,7 @@ class CalculatorForm
     extends \Magento\Framework\View\Element\Template
 {
 
-    const CALCULATOR_JS = 'ecollect/ecollect_calculator.js';
+    //const CALCULATOR_JS = 'ecollect/ecollect_calculator.js';
 
     /**
      * @var $_helperData \ecollect\Core\Helper\Data

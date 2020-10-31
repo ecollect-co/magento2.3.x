@@ -119,7 +119,7 @@ class OrderCancelPlugin
         }
 
         if ($refundAvailable && $paymentID == null){
-            $this->messageManager->addWarningMessage(__('The cancellation will be made through Magento. It was\'t possible to cancel'));
+            $this->messageManager->addWarningMessage(__('The cancellation will be made through Magento. It was\'t possible to cancel on ecollect'));
             return false;
         }
 
