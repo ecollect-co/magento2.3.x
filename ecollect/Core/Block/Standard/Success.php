@@ -8,8 +8,7 @@ namespace ecollect\Core\Block\Standard;
  *
  * @package ecollect\Core\Block\Standard
  */
-class Success
-    extends \ecollect\Core\Block\AbstractSuccess
+class Success extends \ecollect\Core\Block\AbstractSuccess
 {
     /**
      * Set template in constructor method

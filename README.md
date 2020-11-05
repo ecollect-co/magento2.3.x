@@ -5,6 +5,7 @@ Este plugin permite integrar la plataforma ecollect como opción de pago en ecom
 ### Prerrequisitos
 
 Necesita tener instalado Magento 2 con todas sus dependencias y tener los datos de integración a ecollect.
+Las pruebas se deben realizar en modo producción (deploy:mode:set production)
 
 ### Instalación del plugin
 
@@ -41,6 +42,7 @@ php bin/magento cron:run
 
 5- Ejecute los siguientes comandos
 ```
+php bin/magento-cli deploy:mode:set production
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 ```

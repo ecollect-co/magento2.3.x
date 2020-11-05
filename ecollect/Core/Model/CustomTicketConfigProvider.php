@@ -101,7 +101,7 @@ class CustomTicketConfigProvider
                     'discount_coupon' => $this->_scopeConfig->getValue('payment/ecollect_customticket/coupon_ecollect', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
                     'loading_gif'     => $this->_assetRepo->getUrl('ecollect_Core::images/loading.gif'),
                     'logEnabled'      => $this->_scopeConfig->getValue('payment/ecollect/logs', \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
-                    'logoUrl'         => $this->_assetRepo->getUrl("ecollect_Core::images/logo.png"),
+                    'logoUrl'         => $this->_assetRepo->getUrl("ecollect_Core::images/eCollectBadge.svg"),
                     'analytics_key'   => $this->_coreHelper->getClientIdFromAccessToken($this->_scopeConfig->getValue(\ecollect\Core\Helper\Data::XML_PATH_ACCESS_TOKEN, \Magento\Store\Model\ScopeInterface::SCOPE_STORE)),
                     'platform_version' => $this->_productMetaData->getVersion(),
                     'module_version'   => $this->_coreHelper->getModuleVersion()

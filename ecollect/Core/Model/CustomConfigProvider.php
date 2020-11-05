@@ -130,7 +130,7 @@ class CustomConfigProvider
                     'text-choice'      => __('Select'),
                     'default-issuer'   => __('Default issuer'),
                     'text-installment' => __('Enter the card number'),
-                    'logoUrl'          => $this->_assetRepo->getUrl("ecollect_Core::images/logo.png"),
+                    'logoUrl'          => $this->_assetRepo->getUrl("ecollect_Core::images/eCollectBadge.svg"),
                     'platform_version' => $this->_productMetaData->getVersion(),
                     'module_version'   => $this->_coreHelper->getModuleVersion()
                 ],

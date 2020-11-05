@@ -124,11 +124,14 @@ class Success
     {
         $request = $this->getRequest();
         $id = $request->getParam('id');
+        
         $data = $this->_getFormattedPaymentData($id);
-        $dataTxt = json_encode($data);
-
-        $this->_view->loadLayout(['default', "ecollect_standard_success"]);
-        $this->_view->getLayout()->getBlock("ecollect_standard_success")->setKey($dataTxt);
+        $dataTxt = json_encode($data);  
+        
+        $this->_view->loadLayout(['default', 'ecollect_standard_success']);
+        //echo __( $dataTxt."<br>antes de coreModel-");      
+        //die;        
+        $this->_view->getLayout()->getBlock('ecollect_standard_success')->setKey($dataTxt);
         $this->_view->renderLayout();
 
 

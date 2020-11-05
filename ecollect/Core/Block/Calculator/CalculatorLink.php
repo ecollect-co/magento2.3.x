@@ -104,7 +104,7 @@ class CalculatorLink
     }
 
     public function getUrlLogo(){
-        return $this->_assetRepo->getUrl("ecollect_Core::images/logo.png");
+        return $this->_assetRepo->getUrl("ecollect_Core::images/eCollectBadge.svg");
     }
 
     /**

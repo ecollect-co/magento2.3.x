@@ -72,7 +72,7 @@ class StandardConfigProvider
                         'actionUrl'        => $this->methodInstance->getActionUrl(),
                         //'bannerUrl'        => $this->methodInstance->getConfigData('banner_checkout'),
                         'type_checkout'    => $this->methodInstance->getConfigData('type_checkout'),
-                        'logoUrl'          => $this->getImageUrl('logo.png'),
+                        'logoUrl'          => $this->getImageUrl('eCollectBadge.svg'),
                         'analytics_key'    => $this->_scopeConfig->getValue(\ecollect\Core\Helper\Data::XML_PATH_CLIENT_ID, \Magento\Store\Model\ScopeInterface::SCOPE_STORE),
                         'platform_version' => $this->_productMetaData->getVersion(),
                         'module_version'   => $this->_coreHelper->getModuleVersion()

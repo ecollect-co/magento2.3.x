@@ -284,8 +284,12 @@ class eCollectApi
         $this->currencyRate = $getTransactionInformationResult->CurrencyRate;
         $this->bankProcessDate = $getTransactionInformationResult->BankProcessDate;
         if(isset($getTransactionInformationResult->BankName)){
-           $this->bankName = $getTransactionInformationResult->BankName; 
-        }        
+            $this->bankName = $getTransactionInformationResult->BankName; 
+        } else if(isset($getTransactionInformationResult->FiName)){
+            $this->bankName = $getTransactionInformationResult->FiName; 
+        } else{
+            $this->bankName = "Pagado con eCollect";
+        }          
         $this->paymentSystem = $getTransactionInformationResult->PaymentSystem;
         if ($this->returnCode == "SUCCESS") {
              $referenceArray = $getTransactionInformationResult->ReferenceArray;

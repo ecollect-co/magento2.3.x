@@ -6,8 +6,7 @@ namespace ecollect\Core\Block;
  *
  * @package ecollect\Core\Block
  */
-class AbstractSuccess
-    extends \Magento\Framework\View\Element\Template
+class AbstractSuccess extends \Magento\Framework\View\Element\Template
 {
 
     /**

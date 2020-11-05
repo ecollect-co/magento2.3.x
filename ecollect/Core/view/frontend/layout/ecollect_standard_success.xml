@@ -5,13 +5,13 @@
     </head>
     <body>
         <referenceContainer name="page.messages">
-            <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages"/>
+            <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages" template="messages.phtml"/>
         </referenceContainer>
         <referenceContainer name="content">
             <block class="ecollect\Core\Block\Standard\Success" name="ecollect_standard_success" cacheable="false"/>
         </referenceContainer>
-        <referenceContainer name="after.body.start">
+        <!--referenceContainer name="after.body.start">
             <block class="ecollect\Core\Block\Analytics\AfterCheckout" name="mp_analytics" as="mp_analytics" template="mp_analytics.phtml"/>
-        </referenceContainer>
+        </referenceContainer-->
     </body>
 </page>
