@@ -347,7 +347,7 @@ class Api {
         $idCliente = $order_id;
         $tipoDocIdentificacion = "CC";
         //var_dump($preference);
-        $docIdentificacion = $preference['payer']['dni'];
+        //$docIdentificacion = $preference['payer']['dni'];
         //$docIdentificacion = "123456789";
         $firstName = $preference['payer']['first_name'];
         $lastName = $preference['payer']['last_name'];
@@ -363,7 +363,7 @@ class Api {
         $this->ecollectApi->setIdContrato($idContrato);
         $this->ecollectApi->setIdFactura($idFactura);
         $this->ecollectApi->setTipoDocIdentificacion($tipoDocIdentificacion);
-        $this->ecollectApi->setDocIdentificacion($docIdentificacion);
+        //$this->ecollectApi->setDocIdentificacion($docIdentificacion);
         $this->ecollectApi->setNombreCompleto($nombreCompleto);
         $this->ecollectApi->setDireccion($direccion);
         $this->ecollectApi->setTelefono($telefono);

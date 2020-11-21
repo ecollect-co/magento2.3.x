@@ -116,7 +116,7 @@ class eCollectApi
         $referenceArray[] = $this->nombreCompleto;
         $referenceArray[] = $this->docIdentificacion;        
         $referenceArray[] = $this->email;        
-        //$referenceArray[] = $this->idFactura;
+        $referenceArray[] = $this->idFactura;
         //$referenceArray[] = $this->idCliente;
         //$referenceArray[] = $this->telefono;
         //Opcionales
@@ -296,7 +296,6 @@ class eCollectApi
             //var_dump($referenceArray);
             /*$this->idCliente = $referenceArray[0];
             $this->idContrato = $referenceArray[1];
-            $this->idFactura = $referenceArray[2];
             $this->tipoDocIdentificacion = $referenceArray[3];
             $this->nombreCompleto = $referenceArray[4];
             $this->direccion = $referenceArray[5];
@@ -306,6 +305,7 @@ class eCollectApi
             $this->nombreCompleto = $referenceArray[1];
             $this->docIdentificacion = $referenceArray[2];
             $this->email = $referenceArray[3];
+            $this->idFactura = $referenceArray[4];
         }
 
         //file_put_contents("log.html","before return response getTransactionInformation<br>",FILE_APPEND);
