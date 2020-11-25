@@ -235,38 +235,38 @@ class Standard
         $this->_responseLog();
 
         if ($statusFinal == 'approved' || $statusFinal == 'pending' || $statusFinal == 'captured'){
-            //$this->_redirect('checkout/onepage/success');
+            $this->_redirect('checkout/onepage/success');
 
-            $pTxt = $data["ecollectTitle"];
-            $pTxt .= "|".$data["ecollectTicket"];
-            $pTxt .= "|".$data["ecollectTrazabilityCode"];
-            $pTxt .= "|".$data["ecollectTransactionState"];
-            $pTxt .= "|".$data["ecollectBankProcessDate"];
-            $pTxt .= "|".$data["ecollectBankName"];
-            $this->_checkoutSession->setMyValue($pTxt);
+            //$pTxt = $data["ecollectTitle"];
+            //$pTxt .= "|".$data["ecollectTicket"];
+            //$pTxt .= "|".$data["ecollectTrazabilityCode"];
+            //$pTxt .= "|".$data["ecollectTransactionState"];
+            //$pTxt .= "|".$data["ecollectBankProcessDate"];
+            //$pTxt .= "|".$data["ecollectBankName"];
+            //$this->_checkoutSession->setMyValue($pTxt);
 
-            $par = array();
-            $par["t"] = $data["ecollectTitle"];
-            $par["tk"] = $data["ecollectTicket"];
-            $par["tc"] = $data["ecollectTrazabilityCode"];
-            $par["ts"] = $data["ecollectTransactionState"];
-            $par["bpd"] = $data["ecollectBankProcessDate"];
-            $par["bn"] = $data["ecollectBankName"];
-            $this->_checkoutSession->setMyValue($pTxt);
+            //$par = array();
+            //$par["t"] = $data["ecollectTitle"];
+            //$par["tk"] = $data["ecollectTicket"];
+            //$par["tc"] = $data["ecollectTrazabilityCode"];
+            //$par["ts"] = $data["ecollectTransactionState"];
+            //$par["bpd"] = $data["ecollectBankProcessDate"];
+            //$par["bn"] = $data["ecollectBankName"];
+            //$this->_checkoutSession->setMyValue($pTxt);
 
-            $dataTxt = "?t=".urlencode($data["ecollectTitle"]);
-            $dataTxt .= "&tk=".urlencode($data["ecollectTicket"]);
-            $dataTxt .= "&tc=".urlencode($data["ecollectTrazabilityCode"]);
-            $dataTxt .= "&ts=".urlencode($data["ecollectTransactionState"]);
-            $dataTxt .= "&bpd=".urlencode($data["ecollectBankProcessDate"]);
-            $dataTxt .= "&bn=".urlencode($data["ecollectBankName"]);
-            $urlRedirect = 'ecollect/standard/success/'.$dataTxt;
-            file_put_contents("st.html","<br>$urlRedirect<br>",FILE_APPEND);
+            //$dataTxt = "?t=".urlencode($data["ecollectTitle"]);
+            //$dataTxt .= "&tk=".urlencode($data["ecollectTicket"]);
+            //$dataTxt .= "&tc=".urlencode($data["ecollectTrazabilityCode"]);
+            //$dataTxt .= "&ts=".urlencode($data["ecollectTransactionState"]);
+            //$dataTxt .= "&bpd=".urlencode($data["ecollectBankProcessDate"]);
+            //$dataTxt .= "&bn=".urlencode($data["ecollectBankName"]);
+            //$urlRedirect = 'ecollect/standard/success/'.$dataTxt;
+            //file_put_contents("st.html","<br>$urlRedirect<br>",FILE_APPEND);
 
-            $this->_redirect($urlRedirect, ['_current' => true]);
+            //$this->_redirect($urlRedirect, ['_current' => true]);
         } else {
-            //$this->_redirect('checkout/onepage/failure/');
-            $this->_redirect('ecollect/standard/failure/');
+            $this->_redirect('checkout/onepage/failure/');
+            //$this->_redirect('ecollect/standard/failure/');
         }
 
     }
