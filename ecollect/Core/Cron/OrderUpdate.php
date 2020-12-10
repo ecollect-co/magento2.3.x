@@ -201,6 +201,9 @@ class OrderUpdate
                     case "NOT_AUTHORIZED":
                         $returnCode = "cancelled";
                         break;
+                    case "EXPIRED":
+                        $returnCode = "cancelled";
+                        break;						
                     default:
                         $returnCode = "cancelled";
                 }

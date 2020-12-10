@@ -195,6 +195,9 @@ class Api {
                     case "NOT_AUTHORIZED":
                         $returnCode = "cancelled";
                         break;
+                    case "EXPIRED":
+                        $returnCode = "cancelled";
+                        break;						
                     default:
                         $returnCode = "cancelled";
                 }
@@ -372,7 +375,7 @@ class Api {
 
         $data_json =  $this->ecollectApi->getSessionToken();
         
-
+		$txt="";
         if($data_json->ReturnCode == "SUCCESS"){
             //file_put_contents("ecollectApi.html","before createTransactionPayment<br>",FILE_APPEND);
             $result = $this->ecollectApi->createTransactionPayment($data_json->SessionToken);
